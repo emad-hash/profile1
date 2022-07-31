@@ -8,10 +8,11 @@
     text-transform: capitalize;
 }
 body{
-    background-image: url("/img/wwww.jpg");
+    background-image: url('../img/wwww.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-clip: border-box;
+    height: auto;
 }
   
 li , a , button {
