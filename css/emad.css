@@ -133,15 +133,15 @@ header{
     color: white;
 }
 .icon {
-    width: 400px;
+    width: 300px;
     border-radius: 1rem;
     margin-top: 10px;
-   margin-left: 70px;
+   margin-left: 10px;
 }
 .icon a  {
     color: white;
     font-size: 2.5rem;
-    padding: 20px;
+    padding: 15px;
 }
 .icon a:hover {
     color: red;
@@ -175,13 +175,15 @@ header{
 }
 .about .row .img1 img{
     width: 320px;
-    height: 400px;
+    height: auto;
     border-radius: .5rem;
     box-shadow: 0px 0px 16px 0px rgb(226, 225, 225);
 }
 .about .row .con{
     flex: 1 1 55rem;
     text-align: center;
+    width: 90%;
+    height: auto;
 }
 .about .row .con h2{
     font-size: 2.4rem;
@@ -319,7 +321,7 @@ header{
     backdrop-filter: blur(7px);
     border-radius: 1rem;
     box-shadow: 0px 0px 16px 0px rgba(226, 225, 225, 0.577);
-    width: 400px;
+    width: 25%;
     height: 300px;
     box-sizing: border-box;
     margin: 50px;
@@ -331,21 +333,21 @@ header{
 .boxa img{
     padding: 10px;
     border-radius: 15px;
-    width: 400px;
+    width: 100%;
     height: 300px;
 }
 .contentw{
-    height: 70px;
-    width: 370px;
+    height: 60px;
+    width: 95%;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
     bottom: 10px;
-    left: 15px;
+    left: 10px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
     text-align: center;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 
 }
 .emad{
@@ -500,4 +502,33 @@ header{
   section{
     padding: 2rem;
 }
+
+.boxa img{
+    width: 100%;
+    
+}
+.contentw{
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+.about .row .img1 img{
+    width: 100%;
+}
+.icon{
+    width: 100%;
+}
+  .btn{
+    width: 70%;
+  }
+  .my-project .conte .boxa{
+    width: 100%;
+  }
+  .icon-about{
+    width: 100%;
+  }
+  .cent {
+    width: 90%;
+  }
 }  
