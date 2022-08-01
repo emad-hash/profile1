@@ -8,11 +8,14 @@
     text-transform: capitalize;
 }
 body{
-    background-image: url('../img/wwww.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-clip: border-box;
+    width: 100%;
     height: auto;
+    /* background-color: yellowgreen; */
+    background-attachment: fixed;
+    background-image: url(../img/wwww.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
 }
   
 li , a , button {
@@ -22,10 +25,10 @@ li , a , button {
 /* header */
 header{
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: sticky;
-   top: 0; 
-   z-index: 1;
+    top: 0; 
+    z-index: 1;
 }
 .navbar .menubar span{
     color: #fff;
@@ -39,9 +42,11 @@ header{
 .navbar{
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    padding: 12px;
-   background-color: rgba(0, 0, 0, 0.49);
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 80px;
+   background-color: rgb(0, 0, 0);
    
 }
 .logo{
@@ -81,7 +86,9 @@ header{
     color: red;
     width: 100%;
 }
-.cent {
+
+
+ .cent {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
     border-radius: 1rem;
@@ -138,7 +145,7 @@ header{
 }
 .icon a:hover {
     color: red;
-}
+} 
 .about{
   background-color: black;
     color: white;
@@ -294,7 +301,7 @@ header{
 
 
 
-.my-project{
+ .my-project{
     background-color: black;
     width: 100%;
     height: auto;
@@ -318,7 +325,7 @@ header{
     margin: 50px;
 }
 .boxa{
-    /* overflow: hidden; */
+    
     color: black;
 }
 .boxa img{
@@ -355,9 +362,9 @@ header{
 }
 .boxa:hover .emad2{
     opacity: 1;
-}
+} 
 
-footer{
+ footer{
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.53);
 }
@@ -371,7 +378,7 @@ footer{
 .faa span {
     color: red;
     text-transform: uppercase;
-}
+} 
 
 
 
@@ -384,12 +391,6 @@ footer{
 
 
 
-@media (max-width:925px){
-    body{
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
-}
 
 
 
@@ -399,9 +400,8 @@ footer{
 @media (max-width:940px){
     .navbar .menubar span{
         display: block;
-        margin-left: 19 0px;
     }
-    #click:checked ~ .menubar span:before{
+    #click:checked ~ .menubar i:before{
         content:"\f00d";
     }
     .navbar ul{
@@ -421,18 +421,14 @@ footer{
     .navbar ul li{
         margin: 20px 0;
     }
-    .navbar ul a li {
+    .navbar ul li a{
         font-size: 20px;
         display: block;
         font-weight: 600;
     }
-    .navbar ul a li:hover{
+    .navbar ul li a:hover{
         color: #000;
     }
-    body{
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
 }
 
 
@@ -442,10 +438,7 @@ footer{
     section{
         padding: 2rem;
     }
-    body{
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
+   
     
     .cent{
         width: 80%;
@@ -465,16 +458,10 @@ footer{
       html{
         width: 100%;
       }  
-      body{
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
-   
+      
     .cent{
         width: 80%;
     height: 50%; 
-    margin: 0px auto;
-    margin-left: 60px;
     }
     .about{
         width: 100%;
@@ -490,23 +477,20 @@ footer{
 
 
 @media only screen and (max-width: 450px) {
-    body{
-        background-size: cover;
-        background-repeat: no-repeat;
-       }
+    
     html{
       width: 100%;
     }    
     header{
         width: 100%;
-        height: 100px;
+        height: 50px;
     }
-  
+   body{
+    background-attachment: fixed;
+   }
   .cent{
       width: 80%;
-  height: 50%; 
-  margin: 0px auto;
-  margin-left: 60px;
+  height: 40%; 
   }
  
   .about{
@@ -516,4 +500,4 @@ footer{
   section{
     padding: 2rem;
 }
-} 
+}  
