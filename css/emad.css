@@ -324,10 +324,6 @@ header{
     box-sizing: border-box;
     margin: 50px;
 }
-.boxa{
-    
-    color: black;
-}
 .boxa img{
     padding: 10px;
     border-radius: 15px;
@@ -351,11 +347,13 @@ header{
 .emad{
     margin: 10px;
     font-size: 40px;
+    color: black;
 }
 .emad2{
     font-size: 20px;
      margin-top: 50px;
    opacity: 0;
+   color: black;
 }
 .boxa:hover .contentw {
     height: 270px;
