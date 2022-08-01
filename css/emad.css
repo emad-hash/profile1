@@ -30,15 +30,7 @@ header{
     top: 0; 
     z-index: 1;
 }
-.navbar .menubar span{
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-}
-#click{
-    display: none;
-}
+/* start navbar */
 .navbar{
     display: flex;
     width: 100%;
@@ -48,14 +40,21 @@ header{
     padding: 0px 50px 0px 80px;
     background: rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(7px);
-   
 }
 .logo{
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
+.navbar .menubar span{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
  .navbar ul {
     display: flex;
  }
@@ -79,7 +78,6 @@ header{
     background: red;
     transition: width 0.3s;
 }
-
 .navbar ul a li:hover{
     color: red;
 }
@@ -87,8 +85,8 @@ header{
     color: red;
     width: 100%;
 }
-
-
+ /* end navbar */
+/* start */
  .cent {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
@@ -147,6 +145,8 @@ header{
 .icon a:hover {
     color: red;
 } 
+/* end */
+/* start about */
 .about{
   background-color: black;
     color: white;
@@ -212,7 +212,8 @@ header{
  .icon-about a:hover {
     color: red;
 }
-
+/* end about */
+/* start skills */
 .skills{
     color: white;
     position: relative;
@@ -220,7 +221,6 @@ header{
     height: 700px;
     background-color: black;
 }
-
 .skills .container1 {
     position: absolute;
     top: 50%;
@@ -275,8 +275,7 @@ header{
 @keyframes emad {
     100% {
         transform: scaleX(1);
-    }
-    
+    }  
 }
 .line .webdesgin {
     width: 60%;
@@ -300,10 +299,8 @@ header{
     float: right;
     color: red;
 }
-
-
-
-
+ /* end skills */
+/* start project */
  .my-project{
     background-color: black;
     width: 100%;
@@ -366,7 +363,8 @@ header{
 .boxa:hover .emad2{
     opacity: 1;
 } 
-
+/* end project */
+/* start footer */
  footer{
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.53);
@@ -382,24 +380,8 @@ header{
     color: red;
     text-transform: uppercase;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ /* end footer */
+/* star media query */
 @media (max-width:940px){
     .navbar .menubar span{
         display: block;
@@ -447,9 +429,6 @@ header{
       }
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
     section{
         padding: 2rem;
@@ -476,7 +455,6 @@ header{
 
  
 }
-
 
 @media only screen and (max-width: 600px) {
       html{
@@ -505,9 +483,6 @@ header{
       }
 
 }
-
-
-
 
 @media only screen and (max-width: 450px) {
     
@@ -563,3 +538,18 @@ header{
     width: 90%;
   }
 }  
+/* end media query */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
