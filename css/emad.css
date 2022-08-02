@@ -75,14 +75,15 @@ header{
     bottom: -7px;
     left: 50%;
     transform: translateX(-50%);
-    background: red;
+    background: black;
+    border-radius: 15px;
     transition: width 0.3s;
 }
 .navbar ul a li:hover{
-    color: red;
+    color: black;
 }
 .navbar ul a li:hover::after{
-    color: red;
+    color: white;
     width: 100%;
 }
  /* end navbar */
