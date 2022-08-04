@@ -152,7 +152,7 @@ header{
   background-color: black;
     color: white;
     width: 100%;
-    height:700px ;
+    height:auto ;
 }
 .heading{
     text-align: center;
@@ -160,7 +160,6 @@ header{
     color: white;
     padding: 24px;
     text-transform: capitalize;
-    padding-top: 50px;
 }
 .heading span {
     color: red;
@@ -171,7 +170,6 @@ header{
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
-    margin-top: 70px;
 }
 .about .row .img1{
     text-align: center;
@@ -187,7 +185,6 @@ header{
     flex: 1 1 55rem;
     text-align: center;
     width: 90%;
-    height: auto;
 }
 .about .row .con h2{
     font-size: 2.4rem;
@@ -198,20 +195,21 @@ header{
     padding: 16px 0;
     line-height: 2;
 }
+.about .row .con .em {
+    margin-top: 50px;
+}
  .icon-about{
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(7px);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 16px 0px rgba(226, 225, 225, 0.577);
-    width: 300px;
-    margin: 20px auto;
-    height: auto;
-    padding: 9px;
+ margin: 15px auto;
 }
 .icon-about a{
     color: white;
     font-size: 2rem;
-    padding: 20px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 16px 0px rgba(226, 225, 225, 0.577);
+    width: 280px;
 }
  .icon-about a:hover {
     color: red;
@@ -237,7 +235,7 @@ header{
   box-shadow: 0px 0px 16px 0px rgba(226, 225, 225, 0.577);
   width: 60%;
   height: auto;  
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .skills-bar{
     padding: 35px 30px;
@@ -383,7 +381,7 @@ header{
 } 
  /* end footer */
 /* star media query */
-@media (max-width:940px){
+@media  (max-width:940px){
     .navbar .menubar span{
         display: block;
     }
@@ -428,7 +426,23 @@ header{
       .icon-about{
         width: 50%;
       }
+      /* .about{
+        background-color: black;
+          color: white;
+          width: 100%;
+          height:auto;
+      }
+      .about .row .con{
+        padding: 0;
+      }
+      .about .row .con .em {
+        margin-top: 0px;
+    }
+    .about .row .con{
+        padding-bottom: 0px;
+    } */
 }
+
 
 @media only screen and (max-width: 768px) {
     section{
@@ -453,7 +467,12 @@ header{
       .cent {
         width: 90%;
       }
-
+      .about{
+        background-color: black;
+          color: white;
+          width: 100%;
+          height:auto ;
+      }
  
 }
 
