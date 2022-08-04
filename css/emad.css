@@ -152,7 +152,7 @@ header{
   background-color: black;
     color: white;
     width: 100%;
-    height:auto ;
+    height:700px ;
 }
 .heading{
     text-align: center;
@@ -170,6 +170,7 @@ header{
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
+    margin-top: 70px;
 }
 .about .row .img1{
     text-align: center;
