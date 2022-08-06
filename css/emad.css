@@ -9,7 +9,7 @@
 }
 body{
     width: 100%;
-    height: auto;
+    height: 100%;
     /* background-color: yellowgreen; */
     background-attachment: fixed;
     background-image: url(../img/wwww.jpg);
@@ -152,13 +152,13 @@ header{
   background-color: black;
     color: white;
     width: 100%;
-    height:auto ;
+    height:700px ;
 }
 .heading{
     text-align: center;
     font-size: 2.5rem;
     color: white;
-    padding: 24px;
+    padding-top: 54px;
     text-transform: capitalize;
 }
 .heading span {
@@ -167,9 +167,10 @@ header{
 }
 .about .row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1.5rem;
     align-items: center;
+    margin-top: 50px;
 }
 .about .row .img1{
     text-align: center;
@@ -182,7 +183,7 @@ header{
     box-shadow: 0px 0px 16px 0px rgb(226, 225, 225);
 }
 .about .row .con{
-    flex: 1 1 55rem;
+    flex: 1 1 35rem;
     text-align: center;
     width: 90%;
 }
@@ -192,15 +193,11 @@ header{
 }
 .about .row .con .pm{
     font-size: 1.2rem;
-    padding: 16px 0;
-    line-height: 2;
 }
 .about .row .con .em {
-    margin-top: 50px;
+ line-height: 4;
 }
- .icon-about{
- margin: 15px auto;
-}
+
 .icon-about a{
     color: white;
     font-size: 2rem;
@@ -270,7 +267,8 @@ header{
     transform: scale(0);
     transform-origin: left;
     text-transform: uppercase;
-    animation: emad 1s cubic-bezier(1,0,0.5,1) forwards;
+    animation: emad 6s cubic-bezier(1,0,0.5,1) forwards;
+    animation-iteration-count: 2;
 } 
 
 @keyframes emad {
@@ -426,29 +424,23 @@ header{
       .icon-about{
         width: 50%;
       }
-      /* .about{
-        background-color: black;
-          color: white;
-          width: 100%;
-          height:auto;
-      }
       .about .row .con{
-        padding: 0;
-      }
-      .about .row .con .em {
-        margin-top: 0px;
+        flex: 1 1 45rem;
+        text-align: center;
+        width: 90%;
     }
-    .about .row .con{
-        padding-bottom: 0px;
-    } */
+      
+   
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     section{
         padding: 2rem;
     }
-   
+    .about .row {
+        flex-wrap: wrap;
+    }
     
     .cent{
         width: 80%;
@@ -473,6 +465,12 @@ header{
           width: 100%;
           height:auto ;
       }
+      .about .row .img1 img{
+        width: 50%;
+      }
+      .about .row .con .em {
+        line-height: 2.5;
+       }
  
 }
 
@@ -501,6 +499,12 @@ header{
       .cent {
         width: 90%;
       }
+      .about .row {
+        flex-wrap: wrap;
+    }
+    .about .row .con .em {
+        line-height: 2.5;
+       }
 
 }
 
@@ -542,6 +546,7 @@ header{
 .about .row .img1 img{
     width: 100%;
 }
+
 .icon{
     width: 100%;
 }
@@ -557,6 +562,12 @@ header{
   .cent {
     width: 90%;
   }
+  .about .row {
+    flex-wrap: wrap;
+}
+.about .row .con .em {
+    line-height: 2;
+   }
 }  
 /* end media query */
 
